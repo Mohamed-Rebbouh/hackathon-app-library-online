@@ -1,0 +1,54 @@
+﻿<Window x:Class="education.addcours"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:education"
+        mc:Ignorable="d"
+        Title="logwin" Height="500" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="Transparent" AllowsTransparency="True" WindowStyle="None" >
+    <Border CornerRadius="15" Background="#dcdcdc" BorderThickness="0.5" BorderBrush="Black">
+        <Grid>
+            <TextBlock Text="file:" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 15" Foreground="#2b3467"/>
+            <TextBox x:Name="nam" Width="150" Style="{StaticResource textboxB}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,55,0,0" Height="50"/>
+            <TextBox x:Name="add_name"  FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30 65" Width="130" Height="35" BorderThickness="0" BorderBrush="Transparent" IsReadOnly="True"/>
+            <Button Content="open" x:Name="opene" Style="{StaticResource logButton}" Width="100" Height="50" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10 55" FontSize="25"  Click="opene_Click"  />
+
+            <TextBlock Text="name file:" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 105" Foreground="#2b3467"/>
+            <TextBox  Width="250" Style="{StaticResource textboxB}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,145,0,0" Height="50"/>
+            <TextBox x:Name="add_namefile" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="30 155" Width="230" Height="35" BorderThickness="0" BorderBrush="Transparent"/>
+
+
+            <TextBlock Text="speciality" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20 195" Foreground="#2b3467"/>
+            <TextBox  Width="250" Style="{StaticResource textboxB}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,235,0,0" Height="50"/>
+            <TextBox x:Name="add_speciality" FontSize="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="30 225" Width="230" Height="35" BorderThickness="0" BorderBrush="Transparent"/>
+
+
+            <TextBlock Text="module:" FontSize="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20 180" Foreground="#2b3467"/>
+            <TextBox  Width="250" Style="{StaticResource textboxB}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20 130" Height="50"/>
+            <TextBox x:Name="add_modul" FontSize="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="30 135" Width="230" Height="35" BorderThickness="0" BorderBrush="Transparent"/>
+
+            <TextBlock Text="year:" FontSize="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20 90" Foreground="#2b3467"/>
+
+
+
+            <ComboBox x:Name="add_year"  Width="70" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20 50" FontSize="18">
+                <Button Content="L1"/>
+                <Button Content="L2"/>
+                <Button Content="L3"/>
+                <Button Content="M1"/>
+                <Button Content="M2"/>
+            </ComboBox>
+
+            <Button x:Name="add" Content="save" Style="{StaticResource MenuButton}" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="100" Click="add_Click" FontSize="25"  >
+
+            </Button>
+            <Button  Style="{StaticResource closebtn}" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click" >
+                <icon:PackIconMaterial Kind="Close"/>
+
+            </Button>
+           
+        </Grid>
+
+    </Border>
+</Window>

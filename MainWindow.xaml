@@ -1,0 +1,49 @@
+﻿<Window x:Class="education.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:education"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" AllowsTransparency="True" Background="Transparent">
+
+    <Border Background="#dcdcdc" CornerRadius="15">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="450"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox  Width="285" Height="50" Style="{StaticResource textboxB}" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40,150,0,0"/>
+            <PasswordBox  Width="285" Height="50" Style="{StaticResource pass}" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40,250,0,0" />
+            <TextBlock Text="Name:" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40 100" FontSize="30" Foreground="#2b3467" />
+            <TextBlock Text="PassWord :" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="40 205" FontSize="30" Foreground="#2b3467" />
+            <Button Content="SingIn" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="40 120" FontSize="15" BorderBrush="Transparent" BorderThickness="0" Click="Button_Click" />
+            <TextBox x:Name="nome" Height="35" Width="270" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50 155" BorderBrush="Transparent" FontSize="25" BorderThickness="0"/>
+            <PasswordBox x:Name="passw" Height="35" Width="270" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50 158" BorderBrush="Transparent" FontSize="25" BorderThickness="0"/>
+
+            <Separator Background="Black" Grid.Column="0" Width="50" Height="1" Margin="38 118" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+            <Button Grid.Column="0 " Style="{StaticResource MenuButton}" Width="150" Content="login" FontSize="25" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="30" Click="Button_Click_1" Background="#FF69D3E0" Foreground="#2b3467">
+                
+            </Button>
+          
+            <Grid Grid.Column="1" Background="#FF68D2DF">
+                <Button Grid.Column="1" Style="{StaticResource closebtn}" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="5" Click="Button_Click_2">
+                    <icon:PackIconMaterial Kind="Close"/>
+                </Button>
+                <Image Source="/img/aa2.png" Grid.Column="1" Height="400"/>
+
+            </Grid>
+            <TextBlock Text="Welcom" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="50 " Foreground="#2b3467" />
+
+
+
+
+
+            
+
+
+        </Grid>
+
+    </Border>
+</Window>
